@@ -8,10 +8,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    setFixedSize(462,327);
     connect(ui->line1,SIGNAL(textEdited(QString)),this, SLOT(set_RGB()));
     connect(ui->line2,SIGNAL(textEdited(QString)),this, SLOT(set_RGB()));
     connect(ui->line3,SIGNAL(textEdited(QString)),this, SLOT(set_RGB()));
+
+
 
     connect(ui->line7,SIGNAL(textEdited(QString)),this, SLOT(set_SMYK()));
     connect(ui->line8,SIGNAL(textEdited(QString)),this, SLOT(set_SMYK()));
@@ -42,7 +44,7 @@ void MainWindow::paintEvent(QPaintEvent *){
     QPainter p;
     p.begin(this);
     p.setBrush(col);
-    p.drawPolygon(QPolygon()<<QPoint(40,50)<<QPoint(376,50)<<QPoint(376,150)<<QPoint(40,150));
+    p.drawPolygon(QPolygon()<<QPoint(510,30)<<QPoint(681,30)<<QPoint(681,91)<<QPoint(510,91));
     p.end();
 }
 
@@ -75,6 +77,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton1_clicked()
 {
+    setFixedSize(462,327);
     col.setRgb(0,0,0);
     ui->line1->setText(0);
     ui->line2->setText(0);
@@ -185,6 +188,7 @@ void MainWindow::set_HSV()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -202,6 +206,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -219,6 +224,7 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::on_pushButton_8_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -236,6 +242,7 @@ void MainWindow::on_pushButton_8_clicked()
 
 void MainWindow::on_pushButton_11_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -253,6 +260,7 @@ void MainWindow::on_pushButton_11_clicked()
 
 void MainWindow::on_pushButton_14_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -270,6 +278,7 @@ void MainWindow::on_pushButton_14_clicked()
 
 void MainWindow::on_pushButton_17_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -287,6 +296,7 @@ void MainWindow::on_pushButton_17_clicked()
 
 void MainWindow::on_pushButton_3_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -304,6 +314,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_6_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -321,6 +332,7 @@ void MainWindow::on_pushButton_6_clicked()
 
 void MainWindow::on_pushButton_9_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -338,6 +350,7 @@ void MainWindow::on_pushButton_9_clicked()
 
 void MainWindow::on_pushButton_12_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -355,6 +368,7 @@ void MainWindow::on_pushButton_12_clicked()
 
 void MainWindow::on_pushButton_15_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -372,6 +386,7 @@ void MainWindow::on_pushButton_15_clicked()
 
 void MainWindow::on_pushButton_18_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -389,6 +404,7 @@ void MainWindow::on_pushButton_18_clicked()
 
 void MainWindow::on_pushButton_4_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -406,6 +422,7 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_7_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -423,6 +440,7 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_pushButton_10_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -440,6 +458,7 @@ void MainWindow::on_pushButton_10_clicked()
 
 void MainWindow::on_pushButton_13_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -457,6 +476,7 @@ void MainWindow::on_pushButton_13_clicked()
 
 void MainWindow::on_pushButton_16_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
@@ -474,6 +494,7 @@ void MainWindow::on_pushButton_16_clicked()
 
 void MainWindow::on_pushButton_19_clicked()
 {
+    setFixedSize(893,327);
     ui->line1->hide(); ui->line2->hide(); ui->line3->hide();
     ui->line4->hide(); ui->line5->hide(); ui->line6->hide();
     ui->line7->hide(); ui->line8->hide(); ui->line9->hide(); ui->lineE10->hide();
