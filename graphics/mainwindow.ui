@@ -18,27 +18,27 @@
     <property name="geometry">
      <rect>
       <x>740</x>
-      <y>20</y>
-      <width>101</width>
+      <y>30</y>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>CHANGE COLOR</string>
+     <string>PALETTE</string>
     </property>
    </widget>
    <widget class="QLabel" name="lableMain">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>0</y>
+      <x>600</x>
+      <y>10</y>
       <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="text">
@@ -414,12 +414,48 @@
      <rect>
       <x>740</x>
       <y>60</y>
-      <width>101</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>RESET</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line0">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>70</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ENTER COLOR</string>
     </property>
    </widget>
   </widget>

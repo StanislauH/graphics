@@ -71,7 +71,7 @@ void MainWindow::paintEvent(QPaintEvent *){
     QPainter p;
     p.begin(this);
     p.setBrush(col);
-    p.drawPolygon(QPolygon()<<QPoint(560,30)<<QPoint(731,30)<<QPoint(731,91)<<QPoint(560,91));
+    p.drawPolygon(QPolygon()<<QPoint(589,40)<<QPoint(731,40)<<QPoint(731,91)<<QPoint(589,91));
     p.end();
 }
 
@@ -83,6 +83,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     col = QColorDialog::getColor();
+    ui->line0->setText(0);
     ui->line1->setText(QString::number(col.red()));
     ui->line2->setText(QString::number(col.green()));
     ui->line3->setText(QString::number(col.blue()));
@@ -134,6 +135,7 @@ void MainWindow::on_pushButton1_clicked()
 {
     setFixedSize(462,327);
     col.setRgb(0,0,0);
+    ui->line0->setText(0);
     ui->line1->setText(0);
     ui->line2->setText(0);
     ui->line3->setText(0);
@@ -564,4 +566,54 @@ void MainWindow::on_pushButton_19_clicked()
     ui->lineE14->show(); ui->lineE15->show(); ui->lineE16->show();
     ui->label1->show();ui->label3->show();ui->label5->show();
     ui->pushButton1->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    col.setNamedColor(ui->line0->text());
+    ui->line1->setText(QString::number(col.red()));
+    ui->line2->setText(QString::number(col.green()));
+    ui->line3->setText(QString::number(col.blue()));
+
+    ui->line7->setText(QString::number(col.cyanF()));
+    ui->line8->setText(QString::number(col.magentaF()));
+    ui->line9->setText(QString::number(col.yellowF()));
+    ui->lineE10->setText(QString::number(col.blackF()));
+
+    ui->lineE11->setText(QString::number(col.hueF()));
+    ui->lineE12->setText(QString::number(col.saturationF()));
+    ui->lineE13->setText(QString::number(col.lightnessF()));
+
+    ui->lineE17->setText(QString::number(col.hueF()));
+    ui->lineE18->setText(QString::number(col.saturationF()));
+    ui->lineE19->setText(QString::number(col.valueF()));
+
+    float sR = col.red();
+    float sG = col.green();
+    float sB = col.blue();
+    float var_R = ( sR / 255 );
+    float var_G = ( sG / 255 );
+    float var_B = ( sB / 255 );
+
+    if ( var_R > 0.04045 ) var_R = pow((( var_R + 0.055 ) / 1.055 ) , 2.4);
+    else                   var_R = var_R / 12.92;
+    if ( var_G > 0.04045 ) var_G = pow((( var_G + 0.055 ) / 1.055 ) , 2.4);
+    else                   var_G = var_G / 12.92;
+    if ( var_B > 0.04045 ) var_B = pow((( var_B + 0.055 ) / 1.055 ),  2.4);
+    else                   var_B = var_B / 12.92;
+
+    var_R = var_R * 100;
+    var_G = var_G * 100;
+    var_B = var_B * 100;
+
+    float X, Y, Z;
+    X = var_R * 0.4124 + var_G * 0.3576 + var_B * 0.1805;
+    Y = var_R * 0.2126 + var_G * 0.7152 + var_B * 0.0722;
+    Z = var_R * 0.0193 + var_G * 0.1192 + var_B * 0.9505;
+
+    ui->lineE14->setText(QString::number(X));
+    ui->lineE15->setText(QString::number(Y));
+    ui->lineE16->setText(QString::number(Z));
+
+    update();
 }
