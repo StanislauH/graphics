@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>462</width>
-    <height>327</height>
+    <width>1035</width>
+    <height>423</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,11 +30,16 @@
    <widget class="QLabel" name="lableMain">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>590</x>
       <y>0</y>
       <width>121</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>YOUR COLOR:</string>
@@ -46,11 +51,16 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>30</y>
-      <width>191</width>
+      <x>130</x>
+      <y>50</y>
+      <width>231</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>CHOOSE MODEL CONVERSION:</string>
@@ -59,11 +69,16 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>560</x>
       <y>100</y>
       <width>261</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>CHOSEN MODEL CONVERSION:</string>
@@ -73,7 +88,7 @@
     <property name="geometry">
      <rect>
       <x>480</x>
-      <y>120</y>
+      <y>100</y>
       <width>381</width>
       <height>181</height>
      </rect>
@@ -82,75 +97,80 @@
      <item row="2" column="3">
       <widget class="QLineEdit" name="line9">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="line1">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="4">
       <widget class="QLineEdit" name="lineE10">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="3">
       <widget class="QLineEdit" name="lineE16">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="2">
       <widget class="QLineEdit" name="lineE15">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="3">
       <widget class="QLineEdit" name="line6">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
       <widget class="QLineEdit" name="line4">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
       <widget class="QLineEdit" name="line7">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="3">
       <widget class="QLineEdit" name="line3">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
       <widget class="QLineEdit" name="lineE17">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label3">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>CMYK:</string>
        </property>
@@ -162,26 +182,31 @@
      <item row="3" column="2">
       <widget class="QLineEdit" name="lineE12">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
       <widget class="QLineEdit" name="line2">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
       <widget class="QLineEdit" name="line5">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label5">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>XYZ:</string>
        </property>
@@ -192,6 +217,11 @@
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label1">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>RGB:</string>
        </property>
@@ -202,6 +232,11 @@
      </item>
      <item row="5" column="0">
       <widget class="QLabel" name="label6">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>HSV:</string>
        </property>
@@ -212,6 +247,11 @@
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label4">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>HLS:</string>
        </property>
@@ -223,12 +263,17 @@
      <item row="2" column="2">
       <widget class="QLineEdit" name="line8">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label2">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>LAB:</string>
        </property>
@@ -240,35 +285,35 @@
      <item row="5" column="3">
       <widget class="QLineEdit" name="lineE19">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="5" column="2">
       <widget class="QLineEdit" name="lineE18">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
       <widget class="QLineEdit" name="lineE11">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="3" column="3">
       <widget class="QLineEdit" name="lineE13">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
      <item row="4" column="1">
       <widget class="QLineEdit" name="lineE14">
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
       </widget>
      </item>
@@ -284,73 +329,27 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
-     <item row="1" column="0">
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>RGB ↔ LAB ↔ CMYK</string>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
        </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="pushButton_5">
        <property name="text">
-        <string>RGB ↔ CMYK ↔ HLS</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QPushButton" name="pushButton_11">
-       <property name="text">
-        <string>RGB ↔ HSV ↔ LAB </string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QPushButton" name="pushButton_12">
-       <property name="text">
-        <string>CMYK ↔ LAB ↔ RGB</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="pushButton_8">
-       <property name="text">
-        <string>RGB ↔ XYZ ↔ LAB</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="text">
-        <string>CMYK ↔ LAB ↔ XYZ</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QPushButton" name="pushButton_14">
-       <property name="text">
-        <string>CMYK ↔ LAB ↔ HSV </string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QPushButton" name="pushButton_17">
-       <property name="text">
-        <string>CMYK ↔ RGB ↔ HLS </string>
+        <string>RGB ↔ XYZ ↔ CMYK</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
       <widget class="QPushButton" name="pushButton_3">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>CMYK ↔ RGB ↔ HSV</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QPushButton" name="pushButton_18">
-       <property name="text">
-        <string>RGB ↔ XYZ ↔ HLS </string>
        </property>
       </widget>
      </item>
@@ -361,27 +360,6 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_9">
-       <property name="text">
-        <string>HSV ↔ XYZ ↔ LAB</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QPushButton" name="pushButton_15">
-       <property name="text">
-        <string>XYZ ↔ LAB ↔ HLS </string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="text">
-        <string>RGB ↔ XYZ ↔ CMYK</string>
-       </property>
-      </widget>
-     </item>
      <item row="4" column="2">
       <widget class="QPushButton" name="pushButton_13">
        <property name="text">
@@ -389,21 +367,40 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>RGB ↔ CMYK ↔ HLS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="text">
+        <string>CMYK ↔ RGB ↔ HLS </string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
       <widget class="QPushButton" name="pushButton_10">
        <property name="text">
         <string>RGB ↔ CMYK ↔ HSV</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="2">
-      <widget class="QPushButton" name="pushButton_16">
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_18">
        <property name="text">
-        <string>RGB ↔ HLS ↔ LAB</string>
+        <string>RGB ↔ XYZ ↔ HLS </string>
        </property>
       </widget>
      </item>
-     <item row="6" column="2">
+     <item row="4" column="1">
       <widget class="QPushButton" name="pushButton_19">
        <property name="text">
         <string>CMYK ↔ XYZ ↔ RGB</string>
